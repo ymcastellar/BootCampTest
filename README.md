@@ -28,7 +28,7 @@ This project consists of creating a landing page in HTML, CSS and Javascript bas
 * All in English (branches, commits, code)
   
 ## Expected result
-![final](images/final.png)
+![final](assets/images/final.png)
 
 ## Author ✒️
 
