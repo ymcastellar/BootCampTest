@@ -184,6 +184,60 @@
   padding: 3rem;
 }
 
+/* Footer
+      ============================= */
+
+.footer {
+  background-color  : var(--color-black);
+  color             : var(--color-white);
+  /*position        : fixed;*/
+  bottom            : 0;
+  width             : 100%;
+  text-align        : center;
+}
+
+.footer__container {
+  max-width: 100%;
+  margin   : 0 auto;
+  padding  : 0 20px;
+}
+
+
+.footer__links {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+  margin        : 20px 0 12px;
+  padding       : 0;
+}
+
+.footer__item {
+  color      : var(--color-white);
+  text-align : left;
+  font-size  : var(--font-size-xsmall);
+  font-weight: var(--font-normal);
+  padding    : 1rem;
+}
+
+.footer__badges {
+  margin-top: 1rem;
+}
+
+.footer__hr {
+  display   : block;
+  border-top: 1px solid #E5E9F2;
+  opacity   : 0.1;
+  margin    : 1rem 0;
+}
+
+.footer__rights {
+  font-size: var(--font-size-xsmall);
+}
+
+.footer__social {
+  margin-top: 0.5rem;
+}
+
 /* Breakpoints
       ============================= */
 
@@ -228,6 +282,41 @@
     display   : block;
     border-top: 0.5px solid #E5E9F2;
   }
+
+  .footer__up {
+    display        : flex;
+    padding        : 30px 27px 0 27px;
+    justify-content: space-between;
+    text-align     : left;
+  }
+
+  .footer__links {
+    align-items: end;
+  }
+
+  .footer__item {
+    padding: 0.5rem 0;
+  }
+
+  .footer__down {
+    display        : flex;
+    justify-content: space-between;
+    padding        : 1rem 2rem;
+  }
+
+  .footer__badges {
+    display       : flex;
+    flex-direction: column;
+    margin-top    : 1.2rem;
+  }
+
+  .footer__social {
+    margin-top: -0.5rem;
+  }
+
+  .badges__google {
+    margin-bottom: 1rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -253,6 +342,10 @@
   .hr {
     margin-top: 1rem;
   }
+
+  .footer__up {
+    padding: 30px 4rem 0 4rem;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -268,11 +361,20 @@
   .badges {
     margin-right: 4rem;
   }
+
+  .footer__up {
+    padding: 30px 7rem 0 7rem;
+  }
+
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   .container {
     padding: 0 10rem;
+  }
+
+  .footer__up {
+    padding: 30px 12rem 0 12rem;
   }
 }
