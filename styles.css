@@ -300,7 +300,7 @@
 
   .footer__down {
     display        : flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding        : 1rem 2rem;
   }
 
