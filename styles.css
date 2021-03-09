@@ -202,6 +202,9 @@
   padding  : 0 20px;
 }
 
+.footer__up {
+  padding        : 30px 27px 0 27px;
+}
 
 .footer__links {
   display       : flex;
@@ -285,7 +288,6 @@
 
   .footer__up {
     display        : flex;
-    padding        : 30px 27px 0 27px;
     justify-content: space-between;
     text-align     : left;
   }
