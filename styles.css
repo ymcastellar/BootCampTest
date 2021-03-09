@@ -573,6 +573,24 @@
     margin-left: 1rem;
   }
 
+  .testimonial__container {
+    padding    : 2rem 6rem 0 6rem;
+    display    : flex;
+    align-items: center;
+  }
+
+  .testimonial__text {
+    width: 70%;
+  }
+
+  .testimonial__client {
+    width: 30%;
+  }
+
+  .testimonial__img {
+    margin-bottom: -0.3rem;
+  }
+
   .status__data {
     padding-top: 2rem;
   }
@@ -630,23 +648,7 @@
     margin-right: 4rem;
   }
 
-  .testimonial__container {
-    padding    : 2rem 6rem 0 6rem;
-    display    : flex;
-    align-items: center;
-  }
-
-  .testimonial__text {
-    width: 70%;
-  }
-
-  .testimonial__client {
-    width: 30%;
-  }
-
-  .testimonial__img {
-    margin-bottom: -0.3rem;
-  }
+  
 
   .status__divider {
     margin: 0 3rem;
