@@ -531,7 +531,7 @@
     margin-top: -0.5rem;
   }
 
-  .badges__google {
+  .footer__google {
     margin-bottom: 1rem;
   }
 
@@ -553,7 +553,7 @@
     margin-top     : -3.3rem
   }
 
-  .badges__google {
+  .footer__google {
     margin-right: 12px;
   }
 
@@ -636,11 +636,11 @@
     z-index : -1;
   }
 
-  .box__group1 {
+  .features__group1 {
     display: flex;
   }
 
-  .box__group2 {
+  .features__group2 {
     display: flex;
   }
 
