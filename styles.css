@@ -649,7 +649,7 @@
   }
 
   .status__divider {
-    margin: 1rem 3rem;
+    margin: 0 3rem;
   }
 
   .footer__up {
@@ -691,7 +691,7 @@
   }
 
   .status__divider {
-    margin: 1rem 4rem;
+    margin: 0 4rem;
   }
 
   .footer__up {
