@@ -222,6 +222,10 @@
   letter-spacing  : 1px;
 }
 
+.hero__button:hover {
+  background-color: #2EC5CE;
+}
+
 .btn {
   border-radius: 8px;
   padding      : 1rem 1.8rem;
@@ -416,7 +420,6 @@
   font-weight: var(--font-bold);
 }
 
-
 /* Download Section
       ============================= */
 
@@ -444,6 +447,11 @@
   background-color: var(--color-white);
   font-weight     : var(--font-bold);
   margin-top      : 1rem;
+}
+
+.download__button:hover  {
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .download__image {
@@ -489,6 +497,10 @@
   font-size  : var(--font-size-xsmall);
   font-weight: var(--font-normal);
   padding    : 1rem;
+}
+
+.footer__item:hover {
+  color: #c4c4c4;
 }
 
 .footer__badges {
