@@ -526,6 +526,11 @@
   margin: 0 0.3rem;
 }
 
+.footer__social-items:hover {
+  width: 35px;
+  height: 35px;
+}
+
 /* Breakpoints
       ============================= */
 
