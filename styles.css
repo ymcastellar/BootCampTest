@@ -782,7 +782,9 @@
     margin-right: 4rem;
   }
 
-
+  .badges__google {
+    margin-right: 10px;
+  }
 
   .status__divider {
     margin: 0 3rem;
