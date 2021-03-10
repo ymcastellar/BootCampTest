@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'Manrope';
+  src        : url('Manrope-ExtraBold.woff2') format('woff2'),
+    url('Manrope-ExtraBold.woff') format('woff');
+  font-weight : 800;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src        : url('Manrope-Light.woff2') format('woff2'),
+    url('Manrope-Light.woff') format('woff');
+  font-weight : 300;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src        : url('Manrope-ExtraLight.woff2') format('woff2'),
+    url('Manrope-ExtraLight.woff') format('woff');
+  font-weight : 200;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src        : url('Manrope-Regular.woff2') format('woff2'),
+    url('Manrope-Regular.woff') format('woff');
+  font-weight : normal;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src        : url('Manrope-Medium.woff2') format('woff2'),
+    url('Manrope-Medium.woff') format('woff');
+  font-weight : 500;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src        : url('Manrope-Bold.woff2') format('woff2'),
+    url('Manrope-Bold.woff') format('woff');
+  font-weight : bold;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src        : url('Manrope-SemiBold.woff2') format('woff2'),
+    url('Manrope-SemiBold.woff') format('woff');
+  font-weight : 600;
+  font-style  : normal;
+  font-display: swap;
+}
+
+
+
+* {
+  margin         : 0;
+  padding        : 0;
+  list-style     : none;
+  text-decoration: none;
+  border         : none;
+  outline        : none;
+  font-family    : 'Manrope', 'Arial', 'Helvetica', 'sans-serif';
+}
+
+:root {
+  --color-primary   : #8C30F5;
+  --color-black     : #18191F;
+  --color-white     : #FFFFFF;
+  --font-bold       : 700;
+  --font-normal     : normal;
+  --font-size-xsmall: 0.85rem;
+  --font-size-small : 1rem;
+  --font-size-medium: 1.5rem;
+  --font-size-large : 2.5rem;
+  --font-size-xlarge: 3rem;
+}
+
+.container {
+  max-width   : 100%;
+  margin-left : auto;
+  margin-right: auto;
+}
+
+.header {
+  background-color: var(--color-white);
+}
+
+.header__logo {
+  position: relative;
+  top     : 2rem;
+}
+
+/* Hamburger Menu
+      ============================= */
+
+.respmenu__input[type="checkbox"],
+.respmenu__bars,
+.respmenu__x {
+  position  : absolute;
+  box-sizing: border-box;
+  margin    : 0;
+  padding   : 0;
+  left      : 2.8rem;
+  top       : 2.46rem;
+  width     : 20px;
+  height    : 14px;
+}
+
+.respmenu__bars,
+.respmenu__x {
+  font-size     : var(--font-size-xlarge);
+  pointer-events: none;
+}
+
+.respmenu__input[type="checkbox"] {
+  opacity: 0;
+}
+
+.navbar-menu {
+  display: none;
+}
+
+.respmenu__input:checked~.navbar-menu {
+  display: block;
+}
+
+.respmenu__input:checked~.respmenu__bars {
+  display: none;
+}
+
+.respmenu__input:not(:checked)~.respmenu__x {
+  display: none;
+}
+
+/* Navbar
+      ============================= */
+
+.navbar-menu {
+  margin-top: 5rem;
+}
+
+.navbar-menu__item {
+  display: block;
+}
+
+.navbar-menu__link {
+  display    : block;
+  padding    : 1.5rem 0;
+  position   : relative;
+  color      : var(--color-black);
+  font-size  : var(--font-size-small);
+  font-weight: var(--font-bold);
+}
+
+.navbar-menu__link:hover {
+  color: var(--color-primary);
+}
+
+.navbar-menu__item:hover .navbar-menu__link::before {
+  background-color: var(--color-primary);
+  width           : 100%;
+}
+
+.badges {
+  display: none;
+}
+
+.hr {
+  display: none;
+}
+
+.main {
+  padding: 3rem;
+}
+
+/* Breakpoints
+      ============================= */
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 767px) {
+  .header {
+    text-align: center;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+  .navbar-menu {
+    display    : flex;
+    margin-top : -16px;
+    margin-left: 11rem;
+  }
+
+  .respmenu__bars {
+    display: none;
+  }
+
+  .respmenu__x {
+    display: none;
+  }
+
+  .navbar-menu__list {
+    display: flex;
+  }
+
+  .navbar-menu__item {
+    padding: 0 1rem;
+  }
+
+  .header__logo {
+    display    : flex;
+    margin-left: 3rem;
+  }
+
+  .hr {
+    display   : block;
+    border-top: 0.5px solid #E5E9F2;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .navbar-menu {
+    margin-left: 10rem;
+  }
+
+  .badges {
+    display        : flex;
+    justify-content: flex-end;
+    margin-top     : -3.3rem
+  }
+
+  .badges__google {
+    margin-right: 12px;
+  }
+
+  .hr {
+    margin-top: 1rem;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 5rem;
+  }
+
+  .navbar-menu {
+    margin-left: 11rem;
+  }
+
+  .badges {
+    margin-right: 4rem;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    padding: 0 10rem;
+  }
+}
