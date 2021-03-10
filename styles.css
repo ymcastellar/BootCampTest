@@ -180,9 +180,117 @@
   display: none;
 }
 
-.main {
-  padding: 3rem;
+.main__hr1 {
+  display       : block;
+  border-top    : 1px solid #E5E9F2;
+  padding-bottom: 2rem;
 }
+
+.main__hr2 {
+  display   : block;
+  border-top: 1px solid #E5E9F2;
+  margin-top: 2rem;
+}
+
+.main__container {
+  max-width   : 100%;
+  margin-left : auto;
+  margin-right: auto;
+  padding     : 3rem 3rem 0 3rem;
+}
+
+/* Hero
+      ============================= */
+
+.hero {
+  text-align    : center;
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+}
+
+.hero__items {
+  margin-top   : 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero__button {
+  background-color: var(--color-primary);
+  color           : var(--color-white);
+  font-size       : var(--font-size-xsmall);
+  font-weight     : var(--font-bold);
+  letter-spacing  : 1px;
+}
+
+.btn {
+  border-radius: 8px;
+  padding      : 1rem 1.8rem;
+}
+
+.hero__iphone {
+  width : 100%;
+  height: auto;
+}
+
+.hero__circle {
+  width : 100%;
+  height: auto;
+}
+
+
+/* Clients
+      ============================= */
+
+.clients {
+  display        : flex;
+  justify-content: center;
+  text-align     : center;
+}
+
+/* FEATURES
+      ============================= */
+
+.features {
+  margin: 5rem 0;
+}
+
+.features__title {
+  text-align: center;
+}
+
+.features__boxes {
+  display        : flex;
+  justify-content: center;
+  flex-wrap      : wrap;
+  position       : relative;
+}
+
+.features__circle {
+  display: none;
+}
+
+.box {
+  background-color: var(--color-white);
+  box-shadow      : 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius   : 8px;
+  width           : 200px;
+  height          : 145px;
+  padding         : 24px;
+  margin          : 30px;
+}
+
+.box__item {
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  width          : 100%;
+  height         : 100%;
+}
+
+.box__title {
+  width: 68%;
+}
+
 
 /* Footer
       ============================= */
@@ -244,11 +352,18 @@
 /* Breakpoints
       ============================= */
 
-/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 576px) {
+  .clients__items {
+    margin: 1rem 0;
+  }
+
+}
+
 @media screen and (max-width: 767px) {
   .header {
     text-align: center;
   }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -286,6 +401,14 @@
     border-top: 0.5px solid #E5E9F2;
   }
 
+  .clients__items {
+    margin: 0 0.5rem;
+  }
+
+  .clients__hubspot {
+    margin-bottom: 2px;
+  }
+
   .footer__up {
     display        : flex;
     justify-content: space-between;
@@ -302,7 +425,7 @@
 
   .footer__down {
     display        : flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding        : 1rem 2rem;
   }
 
@@ -319,6 +442,7 @@
   .badges__google {
     margin-bottom: 1rem;
   }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -345,6 +469,18 @@
     margin-top: 1rem;
   }
 
+  .hero__title {
+    font-size: 3rem;
+  }
+
+  .hero__iphone {
+    width: 900px;
+  }
+
+  .clients__items {
+    margin-left: 1rem;
+  }
+
   .footer__up {
     padding: 30px 4rem 0 4rem;
   }
@@ -360,12 +496,56 @@
     margin-left: 11rem;
   }
 
+  .hero__title {
+    font-size: 4.2rem;
+  }
+
+  .hero__iphone {
+    width: 900px;
+  }
+
+  .features__title {
+    text-align: left;
+    padding   : 0 2rem;
+    font-size : var(--font-size-large);
+  }
+
+  .features__boxes {
+    display: block;
+  }
+
+  .features__circle {
+    display : block;
+    position: absolute;
+    top     : -5rem;
+    right   : -2rem;
+    z-index : -1;
+  }
+
+  .box__group1 {
+    display: flex;
+  }
+
+  .box__group2 {
+    display: flex;
+  }
+
   .badges {
     margin-right: 4rem;
   }
 
   .footer__up {
     padding: 30px 7rem 0 7rem;
+  }
+
+  .footer__rights {
+    width     : 30%;
+    text-align: center;
+  }
+
+  .footer__social {
+    width     : 55%;
+    text-align: end;
   }
 
 }
@@ -376,7 +556,27 @@
     padding: 0 10rem;
   }
 
+  .hero__title {
+    font-size: 4.5rem;
+  }
+
+  .hero__iphone {
+    width: 1000px;
+  }
+
+  .clients__items {
+    margin-left: 2rem;
+  }
+
+  .features__circle {
+    right: -8rem;
+  }
+
   .footer__up {
     padding: 30px 12rem 0 12rem;
+  }
+
+  .footer__social {
+    width: 40%;
   }
 }
