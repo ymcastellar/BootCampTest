@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Manrope';
-  src        : url('Manrope-ExtraBold.woff2') format('woff2'),
-    url('Manrope-ExtraBold.woff') format('woff');
+  src        : url('assets/font/Manrope-ExtraBold.woff') format('woff2'),
+    url('assets/font/Manrope-ExtraBold.woff') format('woff');
   font-weight : 800;
   font-style  : normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'Manrope';
-  src        : url('Manrope-Light.woff2') format('woff2'),
-    url('Manrope-Light.woff') format('woff');
+  src        : url('assets/font/Manrope-Light.woff2') format('woff2'),
+    url('assets/font/Manrope-Light.woff') format('woff');
   font-weight : 300;
   font-style  : normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'Manrope';
-  src        : url('Manrope-ExtraLight.woff2') format('woff2'),
-    url('Manrope-ExtraLight.woff') format('woff');
+  src        : url('assets/font/Manrope-ExtraLight.woff2') format('woff2'),
+    url('assets/font/Manrope-ExtraLight.woff') format('woff');
   font-weight : 200;
   font-style  : normal;
   font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: 'Manrope';
-  src        : url('Manrope-Regular.woff2') format('woff2'),
-    url('Manrope-Regular.woff') format('woff');
+  src        : url('assets/font/Manrope-Regular.woff2') format('woff2'),
+    url('assets/font/Manrope-Regular.woff') format('woff');
   font-weight : normal;
   font-style  : normal;
   font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
   font-family: 'Manrope';
-  src        : url('Manrope-Medium.woff2') format('woff2'),
-    url('Manrope-Medium.woff') format('woff');
+  src        : url('assets/font/Manrope-Medium.woff2') format('woff2'),
+    url('assets/font/Manrope-Medium.woff') format('woff');
   font-weight : 500;
   font-style  : normal;
   font-display: swap;
@@ -45,8 +45,8 @@
 
 @font-face {
   font-family: 'Manrope';
-  src        : url('Manrope-Bold.woff2') format('woff2'),
-    url('Manrope-Bold.woff') format('woff');
+  src        : url('assets/font/Manrope-Bold.woff2') format('woff2'),
+    url('assets/font/Manrope-Bold.woff') format('woff');
   font-weight : bold;
   font-style  : normal;
   font-display: swap;
@@ -54,8 +54,8 @@
 
 @font-face {
   font-family: 'Manrope';
-  src        : url('Manrope-SemiBold.woff2') format('woff2'),
-    url('Manrope-SemiBold.woff') format('woff');
+  src        : url('assets/font/Manrope-SemiBold.woff2') format('woff2'),
+    url('assets/font/Manrope-SemiBold.woff') format('woff');
   font-weight : 600;
   font-style  : normal;
   font-display: swap;
@@ -87,9 +87,8 @@
 }
 
 .container {
-  max-width   : 100%;
-  margin-left : auto;
-  margin-right: auto;
+  max-width: 1110px;
+  margin   : 0 auto;
 }
 
 .header {
@@ -98,7 +97,7 @@
 
 .header__logo {
   position: relative;
-  top     : 2rem;
+  top     : 2.6rem;
 }
 
 /* Hamburger Menu
@@ -192,13 +191,6 @@
   margin-top: 2rem;
 }
 
-.main__container {
-  max-width   : 100%;
-  margin-left : auto;
-  margin-right: auto;
-  padding     : 3rem 3rem 0 3rem;
-}
-
 /* Hero
       ============================= */
 
@@ -246,9 +238,11 @@
       ============================= */
 
 .clients {
-  display        : flex;
-  justify-content: center;
   text-align     : center;
+}
+
+.clients__items {
+  margin: 1rem;
 }
 
 /* FEATURES
@@ -292,18 +286,11 @@
 }
 
 .box__title {
-  width: 68%;
+  max-width: 138px;
 }
 
 /* Testimonial
       ============================= */
-
-.testimonial__container {
-  max-width   : 100%;
-  margin-left : auto;
-  margin-right: auto;
-  padding     : 2rem;
-}
 
 .testimonial {
   background-color: #D5FAFC;
@@ -345,16 +332,13 @@
 .testimonial__img {
   width        : 100%;
   height       : auto;
-  margin-bottom: -2.3rem;
+  margin-bottom: -0.5rem;
 }
 
 /* Status
       ============================= */
 
-.status__container {
-  max-width       : 100%;
-  margin-left     : auto;
-  margin-right    : auto;
+.status {
   padding         : 2rem;
   background-color: var(--color-primary);
   background-image: url(assets/images/Patterns.png);
@@ -384,7 +368,7 @@
 /* Consultant
       ============================= */
 
-.consultant {
+.consultant__content {
   padding: 1rem;
 }
 
@@ -449,9 +433,9 @@
   margin-top      : 1rem;
 }
 
-.download__button:hover  {
+.download__button:hover {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color           : var(--color-white);
 }
 
 .download__image {
@@ -480,7 +464,7 @@
 }
 
 .footer__up {
-  padding: 30px 27px 0 27px;
+  padding: 3rem 1rem 0 1rem;
 }
 
 .footer__links {
@@ -527,7 +511,7 @@
 }
 
 .footer__social-items:hover {
-  width: 35px;
+  width : 35px;
   height: 35px;
 }
 
@@ -535,9 +519,7 @@
       ============================= */
 
 @media screen and (min-width: 576px) {
-  .clients__items {
-    margin: 1rem 0;
-  }
+  
 
 }
 
@@ -573,22 +555,9 @@
     padding: 0 1rem;
   }
 
-  .header__logo {
-    display    : flex;
-    margin-left: 3rem;
-  }
-
   .hr {
     display   : block;
     border-top: 0.5px solid #E5E9F2;
-  }
-
-  .clients__items {
-    margin: 0 0.5rem;
-  }
-
-  .clients__hubspot {
-    margin-bottom: 2px;
   }
 
   .status__numbers {
@@ -639,9 +608,6 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .container {
-    padding: 0 2rem;
-  }
 
   .navbar-menu {
     margin-left: 10rem;
@@ -673,8 +639,13 @@
     margin-left: 1rem;
   }
 
-  .testimonial__container {
-    padding    : 2rem 6rem 0 6rem;
+  .clients__content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .testimonial__content {
+    padding-top: 2rem;
     display    : flex;
     align-items: center;
   }
@@ -687,15 +658,11 @@
     width: 40%;
   }
 
-  .testimonial__img {
-    margin-bottom: -0.3rem;
-  }
-
   .status__data {
     padding-top: 2rem;
   }
 
-  .consultant {
+  .consultant__content {
     display: flex;
   }
 
@@ -746,16 +713,10 @@
     width: 50%;
   }
 
-  .footer__up {
-    padding: 30px 4rem 0 4rem;
-  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .container {
-    padding: 0 5rem;
-  }
 
   .navbar-menu {
     margin-left: 11rem;
@@ -771,7 +732,6 @@
 
   .features__title {
     text-align: left;
-    padding   : 0 2rem;
     font-size : var(--font-size-large);
   }
 
@@ -840,10 +800,6 @@
     right: 11rem;
   }
 
-  .footer__up {
-    padding: 30px 7rem 0 7rem;
-  }
-
   .footer__rights {
     width     : 50%;
     text-align: center;
@@ -859,9 +815,6 @@
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  .container {
-    padding: 0 10rem;
-  }
 
   .hero__title {
     font-size: 4.5rem;
@@ -904,10 +857,6 @@
   .download__img2 {
     width: 42%;
     right: 11rem;
-  }
-
-  .footer__up {
-    padding: 30px 12rem 0 12rem;
   }
 
   .footer__rights {
