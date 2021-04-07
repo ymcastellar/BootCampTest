@@ -65,9 +65,10 @@
   <!-- Main -->
   <main class="main">
     <div class="container">
+      <button onclick="editno(), save()" class="edit-btn btn js-editable-button">Guardar Cambios</button> 
       <section class="hero">
         <div class="hero__items">
-          <h1 class="hero__title">Track your product sales from anywhere, anytime.</h1>
+          <h1 class="hero__title js-editable" aria-label="prueba">Track your product sales from anywhere, anytime.</h1>
         </div>
         <div class="hero__items">
           <a href="#" class="hero__button btn">Start selling</a>
@@ -163,12 +164,12 @@
     <hr class="main__hr2">
     <div class="container">
       <section class="features">
-        <h1 class="features__title">Discover the key features</h1>
+        <h2 class="features__title js-editable">Discover the key features</h2>
         <div class="features__boxes">
           <div class="features__group1">
             <div class="box">
               <div class="box__item">
-                <h3 class="box__title">Mobile Responsive</h3>
+                <h3 class="box__title js-editable">Mobile Responsive</h3>
                 <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M24 13.333h8L28 8l-4 5.333zm0 5.334h8L28 24l-4-5.333z" fill="#D6B1FF" />
                   <path d="M1.333 0h8v32h-8A1.334 1.334 0 010 30.667V1.333A1.333 1.333 0 011.333 0z" fill="#8C30F5" />
@@ -178,7 +179,7 @@
             </div>
             <div class="box">
               <div class="box__item">
-                <h3 class="box__title">User Friendly</h3>
+                <h3 class="box__title js-editable">User Friendly</h3>
                 <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.333 1.333h25.334l-4 8H1.333l4-8z" fill="#8C30F5" />
                   <path d="M5.333 12h25.334l-4 8H1.333l4-8z" fill="#2EC5CE" />
@@ -188,7 +189,7 @@
             </div>
             <div class="box">
               <div class="box__item">
-                <h3 class="box__title">Well Organised Layers</h3>
+                <h3 class="box__title js-editable">Well Organised Layers</h3>
                 <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M30.667 8V2.667a1.333 1.333 0 00-1.334-1.334H2.667a1.333 1.333 0 00-1.334 1.334V8h29.334z"
                     fill="#2EC5CE" />
@@ -199,7 +200,7 @@
             </div>
             <div class="box">
               <div class="box__item">
-                <h3 class="box__title">Easily Customisable</h3>
+                <h3 class="box__title js-editable">Easily Customisable</h3>
                 <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M28 32H16a1.333 1.333 0 01-1.333-1.333V28A1.333 1.333 0 0116 26.667h12A1.333 1.333 0 0129.333 28v2.667A1.334 1.334 0 0128 32z"
@@ -217,7 +218,7 @@
           <div class="features__group2">
             <div class="box">
               <div class="box__item">
-                <h3 class="box__title">Better Components</h3>
+                <h3 class="box__title js-editable">Better Components</h3>
                 <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.667 1.333h-4a1.333 1.333 0 00-1.334 1.334v26.666a1.333 1.333 0 001.334 1.334h4V1.333z"
                     fill="#D6B1FF" />
@@ -231,7 +232,7 @@
             </div>
             <div class="box">
               <div class="box__item">
-                <h3 class="box__title">Multiple Blocks</h3>
+                <h3 class="box__title js-editable">Multiple Blocks</h3>
                 <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M31.467 1.6c-.267-.267-.8-.267-1.2-.267l-7.6 2.267v26.8l8.4-2.4c.533-.133.933-.667.933-1.333v-24c0-.4-.133-.8-.533-1.067z"
@@ -245,7 +246,7 @@
             </div>
             <div class="box">
               <div class="box__item">
-                <h3 class="box__title">Robust Workflow</h3>
+                <h3 class="box__title js-editable">Robust Workflow</h3>
                 <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12 13.333H2.667A1.333 1.333 0 011.333 12V2.667a1.333 1.333 0 011.334-1.334H12a1.333 1.333 0 011.333 1.334V12A1.333 1.333 0 0112 13.333zM12 30.667H2.667a1.333 1.333 0 01-1.334-1.334V20a1.333 1.333 0 011.334-1.333H12A1.333 1.333 0 0113.333 20v9.333A1.333 1.333 0 0112 30.667z"
@@ -258,7 +259,7 @@
             </div>
             <div class="box">
               <div class="box__item">
-                <h3 class="box__title">Mobile Responsive</h3>
+                <h3 class="box__title js-editable">Mobile Responsive</h3>
                 <img src="assets/images/Group.svg" alt="mobile responsive icon" width="32" height="32">
               </div>
             </div>
@@ -274,15 +275,15 @@
         <div class="testimonial__content">
           <div class="testimonial__text">
             <img class="testimonial__quotes" src="assets/images/quotes.svg" alt="">
-            <p class="testimonial__paragrah">We had an incredible experience working with Landify and were impressed
+            <p class="testimonial__paragrah js-editable">We had an incredible experience working with Landify and were impressed
               they
               made
               such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they
               made
               and their ability to get familiar with the product concept so quickly. It acted as a catalyst to take our
               design to the next level and get more eyes on our product.</p>
-            <p class="testimonial__author">Scarlett Johansson</p>
-            <p class="testimonial__position">CEO at Xion</p>
+            <p class="testimonial__author js-editable">Scarlett Johansson</p>
+            <p class="testimonial__position js-editable">CEO at Xion</p>
             <svg width="54" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="5" cy="5" r="5" fill="#2EC5CE" />
               <circle cx="27" cy="5" r="5" fill="#D9DBE1" />
@@ -298,29 +299,29 @@
     <section class="status">
       <div class="container">
         <article class="status__text">
-          <h1 class="status__title">Some count that matters</h1>
-          <p class="status__subtitle">Our achievement in the journey depicted in numbers</p>
+          <h2 class="status__title js-editable">Some count that matters</h2>
+          <p class="status__subtitle js-editable">Our achievement in the journey depicted in numbers</p>
         </article>
         <article class="status__data">
           <div class="status__numbers">
             <div class="status__col1">
-              <h1 class="status__title"">5</h1>
-              <p class=" status__subtitle">Service Geographics</p>
+              <h3 class="status__title"">5</h3>
+              <p class=" status__subtitle js-editable">Service Geographics</p>
             </div>
             <img class="status__divider" src="assets/images/Divider.svg" alt="" divider>
             <div class="status__col2">
-              <h1 class="status__title"">30</h1>
-              <p class=" status__subtitle">Fortune 500 Clients</p>
+              <h3 class="status__title"">30</h3>
+              <p class=" status__subtitle js-editable">Fortune 500 Clients</p>
             </div>
             <img class="status__divider" src="assets/images/Divider.svg" alt="" divider>
             <div class="status__col3">
-              <h1 class="status__title"">300</h1>
-              <p class=" status__subtitle">Dedicated Members</p>
+              <h3 class="status__title"">300</h3>
+              <p class=" status__subtitle js-editable">Dedicated Members</p>
             </div>
             <img class="status__divider" src="assets/images/Divider.svg" alt="" divider>
             <div class="status__col3">
-              <h1 class="status__title">8</h1>
-              <p class="status__subtitle">Years of Journey</p>
+              <h3 class="status__title">8</h3>
+              <p class="status__subtitle js-editable">Years of Journey</p>
             </div>
         </article>
       </div>
@@ -333,9 +334,9 @@
             <img class="consultant__circle" src="assets/images/Creative.png" alt="">
           </article>
           <article class="consultant__text">
-            <p class="consultant__paragraph1">CONSULTANT</p>
-            <h1 class="consultant__title">Headline</h1>
-            <p class="consultant__paragraph2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam
+            <p class="consultant__paragraph1 js-editable">CONSULTANT</p>
+            <h2 class="consultant__title js-editable">Headline</h2>
+            <p class="consultant__paragraph2 js-editable">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam
               orci pretium a pharetra, feugiat
               cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non
               commodo
@@ -350,7 +351,7 @@
       <div class="container">
         <div class="download__container">
           <article class="download__text">
-            <p class="download__paragraph">Looking to design your new startup website?
+            <p class="download__paragraph js-editable">Looking to design your new startup website?
               or Looking to redesign your website landing page?
               Get started Landify UI Kit!</p>
             <a class="download__button btn" href="#">Download Now</a>
@@ -458,6 +459,7 @@
       </div>
     </div>
   </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>

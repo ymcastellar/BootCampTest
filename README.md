@@ -22,6 +22,12 @@ This project consists of creating a landing page in HTML, CSS and Javascript bas
 * Check [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 * And of course, that the page looks faithful to the design.
 
+## Editaable Mode - Requeriments
+* Pressing the key combination cmd + k (on mac) or ctrl + k (windows) should be able to edit the texts on the page.
+* While the page is in edit mode, an options bar should appear at the top where the save changes button will be.
+* While the page is in edit mode, the texts that I can edit must be visually identifiable.
+* Once the changes are saved, when reloading the page the changes must persist locally.
+
 ## Work flow
 * Create draft of figma design on your account.
 * Upload code in the repository.

@@ -193,6 +193,16 @@
 
 /* Hero
       ============================= */
+.edit-btn {
+  margin          : 2rem auto 0 auto;
+  background-color: #2EC5CE;
+  color           : #FFFFFF;
+  font-family     : 'Manrope';
+}
+
+.edit-btn:hover {
+  background-color: #8C30F5;
+}
 
 .hero {
   text-align    : center;
@@ -202,7 +212,7 @@
 }
 
 .hero__items {
-  margin-top   : 4rem;
+  margin-top   : 2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -238,7 +248,7 @@
       ============================= */
 
 .clients {
-  text-align     : center;
+  text-align: center;
 }
 
 .clients__items {
@@ -518,10 +528,7 @@
 /* Breakpoints
       ============================= */
 
-@media screen and (min-width: 576px) {
-  
-
-}
+@media screen and (min-width: 576px) {}
 
 @media screen and (max-width: 767px) {
   .header {
@@ -640,7 +647,7 @@
   }
 
   .clients__content {
-    display: flex;
+    display        : flex;
     justify-content: center;
   }
 
