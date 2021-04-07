@@ -16,7 +16,7 @@ let buttonEditable = document.querySelector('.js-editable-button');
 toggle_visibility(false);
 
 document.addEventListener('keypress', function (e) {
-  if ((e.ctrlKey || e.metaKey) && e.code == 'KeyZ') {
+  if ((e.ctrlKey || e.metaKey) && e.code == 'KeyK') {
     console.log(e.code + 'adentro');
 		console.log(e.metaKey)
 		document.querySelectorAll('.js-editable').forEach((el) => {
