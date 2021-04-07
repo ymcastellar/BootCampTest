@@ -19,7 +19,7 @@ document.addEventListener('keypress', logKey);
 
 function logKey(e) {
 	
-	if (e.ctrlKey && e.code == 'KeyZ' ) {
+	if ( (e.ctrlKey || e.cmdKey) && e.code == 'KeyK' ) {
 		console.log(e.code + 'adentro');
 		document.querySelectorAll('.js-editable').forEach((el) => {
 			el.contentEditable = true;
