@@ -15,21 +15,21 @@ if (data) {
 let buttonEditable = document.querySelector('.js-editable-button');
 toggle_visibility(false);
 
-document.addEventListener('keypress', logKey);
-
-function logKey(e) {
-	
-	if ( (e.ctrlKey || e.metaKey) && e.code == 'KeyK' ) {
-		console.log(e.code + 'adentro');
+document.addEventListener('keypress', function (e) {
+  if ((e.ctrlKey || e.metaKey) && e.code == 'KeyZ') {
+    console.log(e.code + 'adentro');
+		console.log(e.metaKey)
 		document.querySelectorAll('.js-editable').forEach((el) => {
 			el.contentEditable = true;
 			el.style.backgroundColor = '#feff00';
 			toggle_visibility(true);
 		})
-	}
+    return;
+  }
 	console.log(e.code);
-	console.log(e.ctrlKey);
-}
+	console.log(e.ctrlKey + ' ctrl');
+	console.log(e.metaKey + ' meta');
+});
 
 function editno() {
 	document.querySelectorAll('.js-editable').forEach((el) => {
